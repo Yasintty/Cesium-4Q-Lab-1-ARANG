@@ -4,7 +4,7 @@ const PARAMS = new URLSearchParams(QUERY);
 
 function processData() {
 
-    let user = PARAMS.get("buyer");
+    let buyer = PARAMS.get("buyer");
     document.getElementById("hello").innerText = `Good day ${buyer}!`;
 
     let item1 = PARAMS.get("item1");
@@ -16,8 +16,8 @@ function processData() {
     let item3 = PARAMS.get("item3");
     document.getElementById("item3").innerText = `The amount of parsley you bought is ${item3}`;
 
-    let yourPayment = PARAMS.get("user-money");
-    document.getElementById("user-money").innerText = `Your payment is ${user-money}`; 
+    let yourPayment = PARAMS.get("user_money");
+    document.getElementById("user_money").innerText = `Your payment is ${user_money}`; 
 
     let totalAmount = ((35) * item1) + ((40) * item2) + ((64) * item3);
     if (totalAmount > payment){
@@ -28,3 +28,4 @@ function processData() {
     }
     
 }
+
