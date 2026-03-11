@@ -16,7 +16,7 @@ function processData() {
     let item3 = PARAMS.get("item3");
     document.getElementById("item3").innerText = `The amount of parsley you bought is ${item3}`;
 
-    let yourPayment = PARAMS.get("user_money");
+    let payment = PARAMS.get("user_money");
     document.getElementById("user_money").innerText = `Your payment is ${user_money}`; 
 
     let totalAmount = ((35) * item1) + ((40) * item2) + ((64) * item3);
@@ -28,4 +28,5 @@ function processData() {
     }
     
 }
+
 
