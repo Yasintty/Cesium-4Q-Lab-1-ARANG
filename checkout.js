@@ -16,17 +16,18 @@ function processData() {
     let item3 = PARAMS.get("item3");
     document.getElementById("item3").innerText = `The amount of parsley you bought is ${item3}`;
 
-    let payment = PARAMS.get("user_money");
+    let user_money = PARAMS.get("user_money");
     document.getElementById("user_money").innerText = `Your payment is ${user_money}`; 
 
     let totalAmount = ((35) * item1) + ((40) * item2) + ((64) * item3);
-    if (totalAmount > payment){
+    if (totalAmount > user_money){
         document.getElementById("result").innerText = "You don't have enough money";
     } else {
-        let result = payment - totalAmount;
+        let result = user_money - totalAmount;
         document.getElementById("result").innerText = `Your change is ${result}`;
     }
     
 }
+
 
 
