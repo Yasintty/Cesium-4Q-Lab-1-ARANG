@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My First Webpage</title> 
+
+        <meta charset="UFT-8">
+        <meta name="author" content="Hyacinth">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+             <style>
+            table{
+                border: 1px solid black;
+                border-collapse: collapse; 
+                border-spacing:5px;
+            }
+
+            th, td{
+                border:1px solid black;
+                padding: 5x;
+                text-align: center;
+                width: 100px;
+            }
+        </style>
+
+    </head>
+        <body>
+
+            <table>
+                <tr>
+                    <td>Product</td>
+                    <td>Cost</td>
+                </tr>
+                <tr>
+                    <td id="corn" class="product">Corn</td>
+                    <td>$2</td>
+                </tr>
+                <tr>
+                    <td id="carrot" class="product">Carrot</td>
+                    <td >$2</td>
+                </tr>
+                <tr>
+                    <td id="apple" class="product">Apple</td>
+                    <td>$3</td>
+                </tr>
+            </table>
+
+            <br><br>
+            <hr>
+            <br>
+
+            <form name="home-pg" action="checkout.html" onsubmit="return validateForm();">
+                <label for="buyer"> Name: </label>
+                <input type="text" name="buyer" id="buyer" required>
+
+                <br><br>
+                <hr>
+                <br>
+
+                <label for="item-1"> Item 1: </label>
+                <input type="text" name="item-1" id="item-1" required>
+
+                <br><br>
+
+                <label for="item1-quantity"> Quantity of Item 1: </label>
+                <input type="number" name="item1-quantity" id="item1-quantity" required>
+
+                <br><br>
+                <hr>
+                <br>
+
+                <label for="item-2"> Item 2: </label>
+                <input type="text" name="item-2" id="item-2" required>
+
+                <br><br>
+
+                <label for="item2-quantity"> Quantity of Item 2: </label>
+                <input type="number" name="item2-quantity" id="item2-quantity" required>
+
+                <br><br>
+                <hr>
+                <br>
+
+                <label for="user-money"> Money in hand: </label>
+                <input type="number" name="user-money" id="user-money" required>
+
+                <br><br>
+
+                <button type="submit"> Submit </button>
+                <button type="reset"> Reset </button>
+            </form>
+
+
+
+            <script src="index.js"></script>
+        </body>
+</html> 
